@@ -108,12 +108,10 @@ Some may be worried that using the high capacity underground service might overc
 <br/>
 <br/>
 
-<figure class="cd-image-container">
-  <div class="twentytwenty-container">
-    <img class="mainfig" src="{{'/images/bizkaibus_campus_comparison_allday_current.png' | relative_url }}" alt="Current layout"/>
-    <img src="{{'/images/bizkaibus_campus_comparison_allday_proposed.png' | relative_url }}" alt="Proposed layout" style="background-color:white"/>
-  </div>
-</figure>
+<div class="twentytwenty-container">
+  <img src="{{'/images/bizkaibus_campus_comparison_allday_current.png' | relative_url }}" alt="Current layout"/>
+  <img src="{{'/images/bizkaibus_campus_comparison_allday_proposed.png' | relative_url }}" alt="Proposed layout" style="background-color:white"/>
+</div>
 
 <span class="entry">All-day service is very similar</span> in the proposal. While the current scheme tries to keep too many lines and has to lower frequency to 30 or even 60 minutes, the proposal mimics the same layout as in the peak service but slightly lowering frequency. In this way, the university is connected conveniently throughout the day and is able to better accommodate the needs of any individual. They are given the freedom to choose their own schedule and just ignore when buses are going to depart.
 
