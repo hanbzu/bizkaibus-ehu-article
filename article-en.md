@@ -23,7 +23,7 @@ The lines that go to the campus are too many, and very infrequent. The scheme tr
 
 The current planners have chosen the latter. And it's a fair choice. It wasn't easy to do any better. The problem is that they they chose to serve most of the potential riders with point to point lines. Currently, you can reach Bilbao with no less than 7 direct lines.
 
-![The map appears to show great coverage, but it's an illusion since many lines use the motorways]({{site.url}}/images/bizkaibus_campus_carto.jpg)
+![The map appears to show great coverage, but it's an illusion since many lines use the motorways]({{'/images/bizkaibus_campus_carto.jpg' | relative_url }})
 
 Besides, this map shows the shinny 5 minute headways Metro Bilbao line---marked in orange. If you are on that underground line---which has an excellent ridership levels---currently no station exists where you are guaranteed frequent service to the university.
 
@@ -44,7 +44,7 @@ This is clearly the case when lines with a very poor frequency get the exact sam
 
 One way to avoid this is to use a distinguishable colour scale, such as the [Brewer scale][brewer] used in the schematic maps I made for this piece. These diagrams show how the frequencies can be improved by simplifying the layout and providing connection points. The resulting frequent network diagram appears to cover less map space, but the colour (frequency) of the lines is key here. Let's apply that colour representation to the basic comparison of _direct_ versus _connective_ networks featured in a [essential Jarrett Walker article][jwalkconnect].
 
-![The connective network allows you to show up any time you wish and have stable travel times. Based on Jarrett Walker's example.]({{site.url}}/images/direct_vs_connective_full_en.png)
+![The connective network allows you to show up any time you wish and have stable travel times. Based on Jarrett Walker's example.]({{'/images/direct_vs_connective_full_en.png' | relative_url }})
 
 At first sight, the direct network appears to do much more. However, that effect fades when we pay attention to the colour scale. Which lines are more useful? The current Bizkaibus services to the campus are the _direct network_ type. The dispersion of service means that the buses will not be there whenever you need them. You have to synchronise your schedule _with_ the bus schedule.
 
@@ -55,7 +55,7 @@ At first sight, the direct network appears to do much more. However, that effect
 
 The university has recently opened a new [three-level parking lot][campusparking] in the campus. One that puts more weight in favour of the car, which can now be easily parked in a protected, secured place with plenty of free space. The situation is worsened by the location of the entrance to the parking lot. Just in the middle of the lane that buses take to access the campus. Every turning car now has the potential of delaying the bus and long queues have been seen in the road up to the campus.
 
-![A linear campus. A great missed opportunity for transit lines with more than one stop.]({{site.url}}/images/campus-map.jpg)
+![A linear campus. A great missed opportunity for transit lines with more than one stop.]({{'/images/campus-map.jpg' | relative_url }})
 
 Another source of inconvenience is the [Disneyland-like round-trip][ehustreetview] of the campus that buses have to take before opening their doors at a single stop in a long linear campus. The great number of lines departing at similar times (o'clock, and a half) means a lot of space is needed for the many buses. A great opportunity to do multiple stops along the linear Via Apia was missed. In turn, we have a weird situation where the stop you use is determined by the destination of the bus---they decided to arbitrarily group them like that---, rather than where in the campus you are going.
 
@@ -78,7 +78,7 @@ Change is inevitable if the service is to persist and thrive. Funding is importa
 <br/>
 <br/>
 <br/>
-<img class="img-circle" src="{{ site.url }}{{site.url}}/images/bus-icon.png"
+<img class="img-circle" src="{{'/images/bus-icon.png' | relative_url }}"
      style="background-color:rgba(26, 188, 156,1.0); width: 4em; display: block; margin-left: auto; margin-right: auto; border: 2px solid; border-color: rgba(26, 188, 156,1.0);" />
 <br/>
 <br/>
@@ -92,10 +92,10 @@ In order to increase the ridership the overall experience has to be improved bot
 The key method here is reducing the number of lines and establishing connections between them. Reducing the number of lines allows to concentrate service on these lines, increasing their frequency and allowing for very short connections.
 
 <figure class="cd-image-container">
-  <img class="mainfig" src="{{site.url}}/images/bizkaibus_campus_comparison_peak_current.png" alt="Current layout">
+  <img class="mainfig" src="{{'/images/bizkaibus_campus_comparison_peak_current.png' | relative_url }}" alt="Current layout">
   <span class="cd-image-label" data-type="original"></span>
   <div class="cd-resize-img"> <!-- the resizeable image on top -->
-    <img src="{{site.url}}/images/bizkaibus_campus_comparison_peak_proposed.png" alt="Proposed layout" style="background-color:white">
+    <img src="{{'/images/bizkaibus_campus_comparison_peak_proposed.png' | relative_url }}" alt="Proposed layout" style="background-color:white">
     <span class="cd-image-label" data-type="modified"></span>
   </div>
   <span class="cd-handle"></span>
@@ -109,10 +109,10 @@ Some may be worried that using the high capacity underground service might overc
 <br/>
 
 <figure class="cd-image-container">
-  <img class="mainfig" src="{{site.url}}/images/bizkaibus_campus_comparison_allday_current.png" alt="Current layout">
+  <img class="mainfig" src="{{'/images/bizkaibus_campus_comparison_allday_current.png' | relative_url }}" alt="Current layout">
   <span class="cd-image-label" data-type="original"></span>
   <div class="cd-resize-img"> <!-- the resizeable image on top -->
-    <img src="{{site.url}}/images/bizkaibus_campus_comparison_allday_proposed.png" alt="Proposed layout" style="background-color:white">
+    <img src="{{'/images/bizkaibus_campus_comparison_allday_proposed.png' | relative_url }}" alt="Proposed layout" style="background-color:white">
     <span class="cd-image-label" data-type="modified"></span>
   </div>
   <span class="cd-handle"></span>
@@ -133,7 +133,7 @@ This resistance to change should be overcome. Now and then, a transit network ne
 <br/>
 <br/>
 <br/>
-<img class="img-circle" src="{{ site.url }}{{site.url}}/images/bus-icon.png"
+<img class="img-circle" src="{{'/images/bus-icon.png' | relative_url }}"
      style="background-color:rgba(26, 188, 156,1.0); width: 4em; display: block; margin-left: auto; margin-right: auto; border: 2px solid; border-color: rgba(26, 188, 156,1.0);" />
 <br/>
 <br/>
