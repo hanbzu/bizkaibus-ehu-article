@@ -1,14 +1,3 @@
----
-layout:   post
-topic:    "Bizkaibus"
-title:    "Turn them frequent!"
-date:     2014-10-29 08:00:00
-tags:     detours frequency interactive
-excerpt:  "A call for concentrating service on a complex network through simplification and connections. A case study for others."
-thumbnail: bizkaibus-campus.thumb.png
-comments: true
----
-
 <p class="jumbo">Two modern articulated buses lay still in front of us, engines turned off, windscreens full of colourful protest stickers. Beside one of the buses stands a driver with a blank stare.</p>
 
 A common word appears in both of their destination indicators: _UPV/EHU_, the acronym of the [University of the Basque Country][wikipediaehu]. Just in front of the buses, dozens of students seat on the asphalt, blocking the way. The crowded [Via Apia][ehustreetview] is surprisingly silent as [students peacefully protest][eldiarioehu]. Current [Bizkaibus][bizkaibus] services are, they say, expensive and of poor quality.
