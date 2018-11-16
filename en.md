@@ -163,9 +163,9 @@ Comments, questions? I'm also [on Twitter][hanbzu].
 [agreemnteitb]: http://www.eitb.com/eu/albisteak/ekonomia/osoa/2690214/bizkaibus--garamendik-dio-gatazka-ez-dela-lan-arazo-izan/
 [humantransit]: http://www.humantransit.org/
 
-<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
-<script src="js/jquery.event.move.js" type="text/javascript"></script>
-<script src="js/jquery.twentytwenty.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.event.move.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.twentytwenty.min.js" type="text/javascript"></script>
 <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen" />
 <script type="text/javascript">
   $(function() {
