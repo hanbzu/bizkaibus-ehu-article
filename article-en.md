@@ -55,7 +55,7 @@ At first sight, the direct network appears to do much more. However, that effect
 
 The university has recently opened a new [three-level parking lot][campusparking] in the campus. One that puts more weight in favour of the car, which can now be easily parked in a protected, secured place with plenty of free space. The situation is worsened by the location of the entrance to the parking lot. Just in the middle of the lane that buses take to access the campus. Every turning car now has the potential of delaying the bus and long queues have been seen in the road up to the campus.
 
-{% image {{ site.url }}/images/campus-map.jpg "A linear campus. A great missed opportunity for transit lines with more than one stop." %}
+![A linear campus. A great missed opportunity for transit lines with more than one stop.](/images/campus-map.jpg)
 
 Another source of inconvenience is the [Disneyland-like round-trip][ehustreetview] of the campus that buses have to take before opening their doors at a single stop in a long linear campus. The great number of lines departing at similar times (o'clock, and a half) means a lot of space is needed for the many buses. A great opportunity to do multiple stops along the linear Via Apia was missed. In turn, we have a weird situation where the stop you use is determined by the destination of the bus---they decided to arbitrarily group them like that---, rather than where in the campus you are going.
 
