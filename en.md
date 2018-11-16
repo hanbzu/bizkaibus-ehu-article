@@ -109,8 +109,8 @@ Some may be worried that using the high capacity underground service might overc
 <br/>
 
 <div class="twentytwenty-container">
-  <img src="{{'/images/bizkaibus_campus_comparison_allday_current.png' | relative_url }}" alt="Current layout"/>
-  <img src="{{'/images/bizkaibus_campus_comparison_allday_proposed.png' | relative_url }}" alt="Proposed layout" style="background-color:white"/>
+  <img src="{{'/images/bizkaibus_campus_comparison_allday_current.png' | relative_url }}" alt="Current layout" />
+  <img src="{{'/images/bizkaibus_campus_comparison_allday_proposed.png' | relative_url }}" alt="Proposed layout" />
 </div>
 
 <span class="entry">All-day service is very similar</span> in the proposal. While the current scheme tries to keep too many lines and has to lower frequency to 30 or even 60 minutes, the proposal mimics the same layout as in the peak service but slightly lowering frequency. In this way, the university is connected conveniently throughout the day and is able to better accommodate the needs of any individual. They are given the freedom to choose their own schedule and just ignore when buses are going to depart.
@@ -162,11 +162,9 @@ Comments, questions? I'm also [on Twitter][hanbzu].
 [humantransit]: http://www.humantransit.org/
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.event.move.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.twentytwenty.min.js" type="text/javascript"></script>
-<link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/2.0.0-beta.1/jquery.twentytwenty.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-  $(function() {
-    $(".twentytwenty-container").twentytwenty();
+  $(function(){
+    $('.twentytwenty-container').twentytwenty();
   });
 </script>
