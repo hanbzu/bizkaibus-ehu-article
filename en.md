@@ -23,7 +23,7 @@ The lines that go to the campus are too many, and very infrequent. The scheme tr
 
 The current planners have chosen the latter. And it's a fair choice. It wasn't easy to do any better. The problem is that they they chose to serve most of the potential riders with point to point lines. Currently, you can reach Bilbao with no less than 7 direct lines.
 
-{% image {{ site.url }}/images/bizkaibus_campus_carto.jpg "The map appears to show great coverage, but it's an illusion since many lines use the motorways" %}
+![The map appears to show great coverage, but it's an illusion since many lines use the motorways](/images/bizkaibus_campus_carto.jpg)
 
 Besides, this map shows the shinny 5 minute headways Metro Bilbao line---marked in orange. If you are on that underground line---which has an excellent ridership levels---currently no station exists where you are guaranteed frequent service to the university.
 
@@ -44,7 +44,7 @@ This is clearly the case when lines with a very poor frequency get the exact sam
 
 One way to avoid this is to use a distinguishable colour scale, such as the [Brewer scale][brewer] used in the schematic maps I made for this piece. These diagrams show how the frequencies can be improved by simplifying the layout and providing connection points. The resulting frequent network diagram appears to cover less map space, but the colour (frequency) of the lines is key here. Let's apply that colour representation to the basic comparison of _direct_ versus _connective_ networks featured in a [essential Jarrett Walker article][jwalkconnect].
 
-{% image {{ site.url }}/images/direct_vs_connective_full_en.png "The connective network allows you to show up any time you wish and have stable travel times. Based on Jarrett Walker's example." %}
+![The connective network allows you to show up any time you wish and have stable travel times. Based on Jarrett Walker's example.](/images/direct_vs_connective_full_en.png)
 
 At first sight, the direct network appears to do much more. However, that effect fades when we pay attention to the colour scale. Which lines are more useful? The current Bizkaibus services to the campus are the _direct network_ type. The dispersion of service means that the buses will not be there whenever you need them. You have to synchronise your schedule _with_ the bus schedule.
 
