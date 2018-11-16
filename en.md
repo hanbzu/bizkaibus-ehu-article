@@ -165,3 +165,250 @@ Comments, questions? I'm also [on Twitter][hanbzu].
 [transitmixprop]: http://app.transitmix.net/map/45608
 [agreemnteitb]: http://www.eitb.com/eu/albisteak/ekonomia/osoa/2690214/bizkaibus--garamendik-dio-gatazka-ez-dela-lan-arazo-izan/
 [humantransit]: http://www.humantransit.org/
+
+<style>
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cd-image-container {
+  position: relative;
+  margin: 0em auto;
+}
+.cd-image-container img {
+  display: block;
+}
+
+.cd-image-label {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #ffffff;
+  padding: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -o-transform: translateY(20px);
+  transform: translateY(20px);
+  -webkit-transition: -webkit-transform 0.3s 0.7s, opacity 0.3s 0.7s;
+  -moz-transition: -moz-transform 0.3s 0.7s, opacity 0.3s 0.7s;
+  transition: transform 0.3s 0.7s, opacity 0.3s 0.7s;
+}
+.cd-image-label.is-hidden {
+  visibility: hidden;
+}
+.is-visible .cd-image-label {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.cd-resize-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  border-right: 1px solid #ddd;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.cd-resize-img img {
+  max-width: initial;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: none;
+}
+.cd-resize-img .cd-image-label {
+  right: auto;
+  left: 0;
+}
+.is-visible .cd-resize-img {
+  width: 50%;
+  /* bounce in animation of the modified image */
+  -webkit-animation: cd-bounce-in 0.7s;
+  -moz-animation: cd-bounce-in 0.7s;
+  animation: cd-bounce-in 0.7s;
+}
+
+@-webkit-keyframes cd-bounce-in {
+  0% {
+    width: 0;
+  }
+  60% {
+    width: 55%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@-moz-keyframes cd-bounce-in {
+  0% {
+    width: 0;
+  }
+  60% {
+    width: 55%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes cd-bounce-in {
+  0% {
+    width: 0;
+  }
+  60% {
+    width: 55%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+.cd-handle {
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  /* center the element */
+  left: 50%;
+  top: 50%;
+  margin-left: -22px;
+  margin-top: -22px;
+  border-radius: 50%;
+  background: rgba(26, 188, 156,1.0) url("/lib/image-comparison-slider/img/cd-arrows.svg") no-repeat center center;
+  cursor: move;
+  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 0) scale(0);
+  -moz-transform: translate3d(0, 0, 0) scale(0);
+  -ms-transform: translate3d(0, 0, 0) scale(0);
+  -o-transform: translate3d(0, 0, 0) scale(0);
+  transform: translate3d(0, 0, 0) scale(0);
+}
+.cd-handle.draggable {
+  /* change background color when element is active */
+  background-color: #445b7c;
+}
+.is-visible .cd-handle {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0) scale(1);
+  -moz-transform: translate3d(0, 0, 0) scale(1);
+  -ms-transform: translate3d(0, 0, 0) scale(1);
+  -o-transform: translate3d(0, 0, 0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1);
+  -webkit-transition: -webkit-transform 0.3s 0.7s, opacity 0s 0.7s;
+  -moz-transition: -moz-transform 0.3s 0.7s, opacity 0s 0.7s;
+  transition: transform 0.3s 0.7s, opacity 0s 0.7s;
+}
+</style>
+
+<script src="/lib/image-comparison-slider/js/jquery-2.1.1.js"></script>
+<script src="/lib/image-comparison-slider/js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
+
+<script>
+jQuery(document).ready(function($){
+  //check if the .cd-image-container is in the viewport
+  //if yes, animate it
+  checkPosition($('.cd-image-container'));
+  $(window).on('scroll', function(){
+    checkPosition($('.cd-image-container'));
+  });
+
+  //make the .cd-handle element draggable and modify .cd-resize-img width according to its position
+  $('.cd-image-container').each(function(){
+    var actual = $(this);
+    drags(actual.find('.cd-handle'), actual.find('.cd-resize-img'), actual, actual.find('.cd-image-label[data-type="original"]'), actual.find('.cd-image-label[data-type="modified"]'));
+  });
+
+  //update images label visibility
+  $(window).on('resize', function(){
+    $('.cd-image-container').each(function(){
+      var actual = $(this);
+      updateLabel(actual.find('.cd-image-label[data-type="modified"]'), actual.find('.cd-resize-img'), 'left');
+      updateLabel(actual.find('.cd-image-label[data-type="original"]'), actual.find('.cd-resize-img'), 'right');
+    });
+  });
+});
+
+function checkPosition(container) {
+  container.each(function(){
+    var actualContainer = $(this);
+    if( $(window).scrollTop() + $(window).height()*0.5 > actualContainer.offset().top) {
+        actualContainer.addClass('is-visible');
+    }
+  });
+}
+
+//draggable funtionality - credits to http://css-tricks.com/snippets/jquery/draggable-without-jquery-ui/
+function drags(dragElement, resizeElement, container, labelContainer, labelResizeElement) {
+  dragElement.on("mousedown vmousedown", function(e) {
+    dragElement.addClass('draggable');
+    resizeElement.addClass('resizable');
+
+    var dragWidth = dragElement.outerWidth(),
+        xPosition = dragElement.offset().left + dragWidth - e.pageX,
+        containerOffset = container.offset().left,
+        containerWidth = container.outerWidth(),
+        minLeft = containerOffset - 22,
+        maxLeft = containerOffset + containerWidth - dragWidth + 22;
+
+    dragElement.parents().on("mousemove vmousemove", function(e) {
+      leftValue = e.pageX + xPosition - dragWidth;
+
+      //constrain the draggable element to move inside his container
+      if(leftValue < minLeft ) {
+        leftValue = minLeft;
+      } else if ( leftValue > maxLeft) {
+        leftValue = maxLeft;
+      }
+
+      widthValue = (leftValue + dragWidth/2 - containerOffset)*100/containerWidth+'%';
+
+      $('.draggable').css('left', widthValue).on("mouseup vmouseup", function() {
+        $(this).removeClass('draggable');
+        resizeElement.removeClass('resizable');
+      });
+
+      $('.resizable').css('width', widthValue);
+
+      updateLabel(labelResizeElement, resizeElement, 'left');
+      updateLabel(labelContainer, resizeElement, 'right');
+
+      }).on("mouseup vmouseup", function(e){
+        dragElement.removeClass('draggable');
+        resizeElement.removeClass('resizable');
+    });
+      e.preventDefault();
+  }).on("mouseup vmouseup", function(e) {
+    dragElement.removeClass('draggable');
+    resizeElement.removeClass('resizable');
+  });
+}
+
+function updateLabel(label, resizeElement, position) {
+  if(position == 'left') {
+    ( label.offset().left + label.outerWidth() < resizeElement.offset().left + resizeElement.outerWidth() ) ? label.removeClass('is-hidden') : label.addClass('is-hidden') ;
+  } else {
+    ( label.offset().left > resizeElement.offset().left + resizeElement.outerWidth() ) ? label.removeClass('is-hidden') : label.addClass('is-hidden') ;
+  }
+}
+
+</script>
