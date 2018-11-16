@@ -17,7 +17,7 @@ According to worker unions, at the end of last year's strike (2013), they signed
 
 The lines that go to the campus are too many, and very infrequent. The scheme tries to cover most populated places with their own bus line, but cannot afford to put many buses in each of these lines.
 
-![The campus of Bizkaia]({{site.url}}/images/campus-leioa.jpg)
+![The campus of Bizkaia]({{'/images/campus-leioa.jpg' | relative_url }})
 
 [_Be on the way_][jwalkbeonway] is a good motto when it comes to laying out a transit friendly development. The developers of the 1972 brutalist campus of Biscay in Leioa didn't have that in mind. The campus is uphill, surrounded by empty green land and no major road or railway is close enough. Transit lines have to deviate quite a few kilometres from the optimal routes or there have to be dedicated lines for university service.
 
