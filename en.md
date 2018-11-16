@@ -91,15 +91,12 @@ In order to increase the ridership the overall experience has to be improved bot
 
 The key method here is reducing the number of lines and establishing connections between them. Reducing the number of lines allows to concentrate service on these lines, increasing their frequency and allowing for very short connections.
 
-<figure class="cd-image-container">
-  <img class="mainfig" src="{{'/images/bizkaibus_campus_comparison_peak_current.png' | relative_url }}" alt="Current layout">
-  <span class="cd-image-label" data-type="original"></span>
-  <div class="cd-resize-img"> <!-- the resizeable image on top -->
-    <img src="{{'/images/bizkaibus_campus_comparison_peak_proposed.png' | relative_url }}" alt="Proposed layout" style="background-color:white">
-    <span class="cd-image-label" data-type="modified"></span>
+<figure>
+  <div class="twentytwenty-container">
+    <img src="{{'/images/bizkaibus_campus_comparison_peak_current.png' | relative_url }}" alt="Current layout" />
+    <img src="{{'/images/bizkaibus_campus_comparison_peak_proposed.png' | relative_url }}" alt="Proposed layout" />
   </div>
-  <span class="cd-handle"></span>
-</figure> <!-- cd-image-container -->
+</figure>
 
 <span class="entry">For peak service</span>, the 16 buses used in the current scheme are reduced to 10 buses---freeing 6 buses to increase frequency in other lines---and distributed along two shorter lines. Both new, frequent lines link with the Metro Bilbao railway line running every 5 minutes. In the case of the Leioa line (on the left), a shorter route is used along the projected tramway axis. On the other hand, the San Inazio line, much shorter than the A2314, uses a much more agile connection with the San Inazio underground station but maintains the minor Asua deviation to maintain coverage in that area.
 
@@ -108,10 +105,12 @@ Some may be worried that using the high capacity underground service might overc
 <br/>
 <br/>
 
-<div class="twentytwenty-container">
-  <img src="{{'/images/bizkaibus_campus_comparison_allday_current.png' | relative_url }}" alt="Current layout" />
-  <img src="{{'/images/bizkaibus_campus_comparison_allday_proposed.png' | relative_url }}" alt="Proposed layout" />
-</div>
+<figure>
+  <div class="twentytwenty-container">
+    <img src="{{'/images/bizkaibus_campus_comparison_allday_current.png' | relative_url }}" alt="Current layout" />
+    <img src="{{'/images/bizkaibus_campus_comparison_allday_proposed.png' | relative_url }}" alt="Proposed layout" />
+  </div>
+</figure>
 
 <span class="entry">All-day service is very similar</span> in the proposal. While the current scheme tries to keep too many lines and has to lower frequency to 30 or even 60 minutes, the proposal mimics the same layout as in the peak service but slightly lowering frequency. In this way, the university is connected conveniently throughout the day and is able to better accommodate the needs of any individual. They are given the freedom to choose their own schedule and just ignore when buses are going to depart.
 
